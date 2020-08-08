@@ -27,7 +27,8 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/PodFrameWork"
+  spec.homepage     = "https://github.com/MohideenSheikSulaiman/PodFramework.git"
+  spec.source = { :git => 'https://github.com/MohideenSheikSulaiman/PodFramework.git'}
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

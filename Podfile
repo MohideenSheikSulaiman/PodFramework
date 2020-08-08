@@ -6,7 +6,7 @@ target 'PodFrameWork' do
   use_frameworks!
 
   # Pods for PodFrameWork
-  #pod 'Firebase/MLVision', '6.25.0'
-  #pod 'Firebase/MLVisionTextModel', '6.25.0'
+  pod 'Firebase/MLVision', '6.25.0'
+  pod 'Firebase/MLVisionTextModel', '6.25.0'
 
 end

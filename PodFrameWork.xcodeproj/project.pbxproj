@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		36269292D86779DD6683489E /* Pods_PodFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64CA109A287F0A3A4E6B96C /* Pods_PodFrameWork.framework */; };
 		CA16D05324DED1C40040BF86 /* PodFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = CA16D05124DED1C40040BF86 /* PodFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA16D05C24DED7480040BF86 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16D05B24DED7480040BF86 /* Configurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		CA16D04E24DED1C40040BF86 /* PodFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA16D05124DED1C40040BF86 /* PodFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodFrameWork.h; sourceTree = "<group>"; };
 		CA16D05224DED1C40040BF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA16D05B24DED7480040BF86 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		CE264534C10320360D4BD448 /* Pods-PodFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodFrameWork.release.xcconfig"; path = "Target Support Files/Pods-PodFrameWork/Pods-PodFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 		ED283765BFD25AD6E5149AD3 /* Pods-PodFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodFrameWork.debug.xcconfig"; path = "Target Support Files/Pods-PodFrameWork/Pods-PodFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +40,6 @@
 				ED283765BFD25AD6E5149AD3 /* Pods-PodFrameWork.debug.xcconfig */,
 				CE264534C10320360D4BD448 /* Pods-PodFrameWork.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 			children = (
 				CA16D05124DED1C40040BF86 /* PodFrameWork.h */,
 				CA16D05224DED1C40040BF86 /* Info.plist */,
+				CA16D05B24DED7480040BF86 /* Configurator.swift */,
 			);
 			path = PodFrameWork;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 				TargetAttributes = {
 					CA16D04D24DED1C40040BF86 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA16D05C24DED7480040BF86 /* Configurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED283765BFD25AD6E5149AD3 /* Pods-PodFrameWork.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -345,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.techaasia.PodFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE264534C10320360D4BD448 /* Pods-PodFrameWork.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

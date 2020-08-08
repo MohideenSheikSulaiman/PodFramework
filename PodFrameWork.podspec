@@ -8,6 +8,15 @@
 
 Pod::Spec.new do |spec|
 
+  spec.name             = 'PodFrameWork'
+  spec.version     	    = "0.0.1"
+  spec.homepage         = 'https://github.com/MohideenSheikSulaiman/PodFramework'
+
+  spec.source           = { :git => 'https://github.com/MohideenSheikSulaiman/PodFramework.git', :tag => 'v1.0' }
+  spec.framework        = 'SystemConfiguration'
+  spec.requires_arc     = true
+
+
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  These will help people to find your library, and whilst it
@@ -15,8 +24,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "PodFrameWork"
-  spec.version      = "0.0.1"
+
   spec.summary      = "A short description of PodFrameWork."
 
   # This description is used to generate tags and improve search results.
@@ -27,8 +35,6 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "https://github.com/MohideenSheikSulaiman/PodFramework.git"
-  spec.source = { :git => 'https://github.com/MohideenSheikSulaiman/PodFramework.git'}
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +86,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/PodFrameWork.git", :tag => "#{spec.version}" }
+#  spec.source       = { :git => "http://EXAMPLE/PodFrameWork.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +97,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
